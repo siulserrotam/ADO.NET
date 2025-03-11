@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\usuario\\Escritorio\\Space\\ado.net\\ApiAdo\\ApiAdo.csproj": {}
+    "C:\\Users\\usuario\\Escritorio\\Space\\ado.net\\apiado\\ApiAdo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\usuario\\Escritorio\\Space\\ado.net\\ApiAdo\\ApiAdo.csproj": {
+    "C:\\Users\\usuario\\Escritorio\\Space\\ado.net\\apiado\\ApiAdo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usuario\\Escritorio\\Space\\ado.net\\ApiAdo\\ApiAdo.csproj",
+        "projectUniqueName": "C:\\Users\\usuario\\Escritorio\\Space\\ado.net\\apiado\\ApiAdo.csproj",
         "projectName": "ApiAdo",
-        "projectPath": "C:\\Users\\usuario\\Escritorio\\Space\\ado.net\\ApiAdo\\ApiAdo.csproj",
+        "projectPath": "C:\\Users\\usuario\\Escritorio\\Space\\ado.net\\apiado\\ApiAdo.csproj",
         "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usuario\\Escritorio\\Space\\ado.net\\ApiAdo\\obj\\",
+        "outputPath": "C:\\Users\\usuario\\Escritorio\\Space\\ado.net\\apiado\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
