@@ -1,12 +1,13 @@
-import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
+import { ApplicationConfig, importProvidersFrom } from '@angular/core';
 import { provideRouter, withComponentInputBinding } from '@angular/router';
-
-import { routes } from './app.routes';
+import { HttpClientModule } from '@angular/common/http';
+import { routes } from './app.routes';  // Asegúrate de que 'routes' esté exportado desde 'app.routes.ts'
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideZoneChangeDetection({ eventCoalescing: true }), 
-    provideRouter(routes,withComponentInputBinding()),// importProviderFrom(RouterModule)
-   // importProviderFrom(HttpClientModule)
+    provideRouter(routes, withComponentInputBinding()), // Configuración de las rutas
+    provideAnimationsAsync(),
+    importProvidersFrom(HttpClientModule) // Importar el módulo HTTP
   ]
-}
+};

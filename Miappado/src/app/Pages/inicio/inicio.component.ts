@@ -23,7 +23,7 @@ export class InicioComponent {
     
     // Propiedades
     public listaEmpleados: Empleado[] = [];
-    public displayedColumns: string[] = ['NombreCompleto', 'Correo', 'Sueldo', 'fechaContrato', 'acciones', 'accion'];
+    public displayedColumns: string[] = ['nombreCompleto', 'correo', 'sueldo', 'fechaContrato', 'accion'];
     
     // Método para obtener empleados
     obtenerEmpleados() {
@@ -38,7 +38,9 @@ export class InicioComponent {
         }
       })
     }
-      constructor(private router:Router){}
+      constructor(private router:Router){
+        this.obtenerEmpleados();
+      }
 
         Nuevo(){
           this.router.navigate(['/Empleado',0]);
