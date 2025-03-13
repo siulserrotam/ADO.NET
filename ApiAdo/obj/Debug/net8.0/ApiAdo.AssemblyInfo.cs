@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiAdo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aae1fc0e82f812b107b220c179bc3ac2358751c5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd33a5e80f4ff126ca7358892f650eb8da50fecc")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiAdo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiAdo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

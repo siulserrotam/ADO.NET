@@ -37,3 +37,4 @@ C:\Users\usuario\Escritorio\Space\ado.net\apiado\obj\Debug\net8.0\refint\ApiAdo.
 C:\Users\usuario\Escritorio\Space\ado.net\apiado\obj\Debug\net8.0\ApiAdo.pdb
 C:\Users\usuario\Escritorio\Space\ado.net\apiado\obj\Debug\net8.0\ApiAdo.genruntimeconfig.cache
 C:\Users\usuario\Escritorio\Space\ado.net\apiado\obj\Debug\net8.0\ref\ApiAdo.dll
+C:\Users\usuario\Escritorio\Space\ado.net\apiado\obj\Debug\net8.0\ApiAdo.sourcelink.json

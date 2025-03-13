@@ -1,0 +1,39 @@
+# .NET
+.vs/
+.vscode/
+.idea/
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Node.js / Angular
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+.angular/
+
+# Logs
+logs/
+*.log
+
+# ASP.NET
+*.dbmdl
+*.bak
+*.mdf
+*.ldf
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+
+# JetBrains Rider
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
