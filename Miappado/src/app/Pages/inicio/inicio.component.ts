@@ -46,17 +46,19 @@ export class InicioComponent {
           this.router.navigate(['/Empleado',0]);
         }
 
-        Editar(Objeto: Empleado){
-          this.router.navigate(['/Empleado',Objeto.idEmpleado]);  
+        Editar(objeto: Empleado){
+          this.router.navigate(['/Empleado',objeto.idEmpleado]);  
         }
         
-        Eliminar(Objeto: Empleado){
-          if(confirm('¿Estás seguro de eliminar este empleado?'+Objeto.nombreCompleto)){
-          this.empleadoServicio.eliminar(Objeto.idEmpleado).subscribe({
+        Eliminar(objeto: Empleado){
+          if(confirm('¿Estás seguro de eliminar este empleado?'+objeto.nombreCompleto)){
+          this.empleadoServicio.eliminar(objeto.idEmpleado).subscribe({
             next:(data)=>{
-              if(data.issuccess){
+              if(data.isSussess){
                 this.obtenerEmpleados();
-              }else{
+                
+              }
+              else{
                 alert("No se pudo Eliminar")
               }
             },

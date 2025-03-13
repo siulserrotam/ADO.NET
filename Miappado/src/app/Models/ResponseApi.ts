@@ -1,3 +1,3 @@
 export interface ResponseApi{
-    issuccess: boolean;
+    isSussess: boolean;
 }

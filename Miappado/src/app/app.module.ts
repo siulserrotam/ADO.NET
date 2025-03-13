@@ -12,10 +12,11 @@ import { appConfig } from './app.config';  // Cambiar la importación a 'appConf
   imports: [
     BrowserModule,
     AppRoutingModule,  // Importamos el módulo de rutas
+    
   ],
   providers: [
     { provide: 'AppConfig', useValue: appConfig }  // Inyectamos la configuración global
   ],
-  bootstrap: [AppComponent]  // Componente principal
+
 })
 export class AppModule { }

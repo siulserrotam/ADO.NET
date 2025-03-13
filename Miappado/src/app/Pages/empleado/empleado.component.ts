@@ -17,15 +17,14 @@ import { Router } from '@angular/router';
 })
 export class EmpleadoComponent implements OnInit {
 
-  @Input() idEmpleado!: number; 
+  @Input('id') idEmpleado!: number; 
   private empleadoServicio = inject(EmpleadoService); 
   public formBuilder = inject(FormBuilder); 
 
   public formEmpleado: FormGroup = this.formBuilder.group({ 
-
     nombreCompleto: [''],
     correo: [''],
-    sueldo: [''],
+    sueldo: [0],
     fechaContrato: ['']
   });
 
@@ -42,41 +41,44 @@ export class EmpleadoComponent implements OnInit {
             fechaContrato: data.fechaContrato
           });
         },
-        error: (err) => console.log(err.message)
+        error: (err) => 
+          console.log(err.message)
       });
     }
   }
 
   guardar(){ 
-    const Objeto: Empleado = {
+    const objeto: Empleado = {
       idEmpleado: this.idEmpleado,
       nombreCompleto: this.formEmpleado.value.nombreCompleto,
       correo: this.formEmpleado.value.correo,
       sueldo: this.formEmpleado.value.sueldo,
       fechaContrato: this.formEmpleado.value.fechaContrato
-    };
-    
+    }
+
     if (this.idEmpleado == 0) {
-      this.empleadoServicio.crear(Objeto).subscribe({
+      this.empleadoServicio.crear(objeto).subscribe({
         next: (data) => {
-          if (data.issuccess) {
+          if (data.isSussess) {
             this.router.navigate(["/"]);
           } else {
             alert("Error al crear");
           }
         },
-        error: (err) => console.log(err.message)
+        error: (err) => 
+          console.log(err.message)
       });
     } else {
-      this.empleadoServicio.editar(Objeto).subscribe({
+      this.empleadoServicio.editar(objeto).subscribe({
         next: (data) => {
-          if (data.issuccess) {
+          if (data.isSussess) {
             this.router.navigate(["/"]);
           } else {
             alert("Error al editar");
           }
         },
-        error: (err) => console.log(err.message)
+        error: (err) => 
+          console.log(err.message)
       });
     }
   }
